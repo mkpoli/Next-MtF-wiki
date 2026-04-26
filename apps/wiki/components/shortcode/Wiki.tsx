@@ -9,12 +9,7 @@ export default function Wiki({ attrs }: ShortCodeCompProps) {
   const href = `https://${language}.wikipedia.org/${locale}/${item}`;
 
   return (
-    <a
-      href={href}
-      className="text-blue-600 hover:underline"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <a href={href} target="_blank" rel="noopener noreferrer">
       {name}
     </a>
   );

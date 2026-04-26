@@ -11,9 +11,5 @@ export default function Ref({ attrs }: ShortCodeCompProps) {
   // 处理路径，确保以/开头
   const href = path.startsWith('/') ? path : `/${path}`;
 
-  return (
-    <Link href={href} className="text-blue-600 hover:underline">
-      {path}
-    </Link>
-  );
+  return <Link href={href}>{path}</Link>;
 }
