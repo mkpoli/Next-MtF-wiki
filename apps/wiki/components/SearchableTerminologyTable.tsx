@@ -434,10 +434,10 @@ export default function SearchableTerminologyTable({ data, lang }: Props) {
                         {isOpen && canExpand && (
                           <tr
                             key={`${entry.id}-detail`}
-                            className="bg-base-100"
+                            className="bg-base-200"
                           >
                             <td colSpan={colCount} className="px-4 py-3">
-                              <dl className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 text-sm">
+                              <dl className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 text-xs">
                                 {lang === 'zh-cn' && entry.avoid && (
                                   <>
                                     <dt className="font-semibold text-error/80">
@@ -491,7 +491,7 @@ export default function SearchableTerminologyTable({ data, lang }: Props) {
                                             href={`https://www.wikidata.org/wiki/${entry.wikidata}`}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="link text-primary/65 text-xs font-mono hover:text-primary"
+                                            className="link font-mono text-base-content/70 hover:text-base-content"
                                             onClick={(ev) =>
                                               ev.stopPropagation()
                                             }
@@ -503,7 +503,7 @@ export default function SearchableTerminologyTable({ data, lang }: Props) {
                                               href={`https://www.wikidata.org/wiki/Special:GoToLinkedPage/${wikiLang}wiki/${entry.wikidata}`}
                                               target="_blank"
                                               rel="noopener noreferrer"
-                                              className="link text-primary/65 text-xs hover:text-primary"
+                                              className="link text-base-content/70 hover:text-base-content"
                                               onClick={(ev) =>
                                                 ev.stopPropagation()
                                               }
@@ -515,7 +515,7 @@ export default function SearchableTerminologyTable({ data, lang }: Props) {
                                             href={`https://www.wikidata.org/wiki/Special:GoToLinkedPage/enwiki/${entry.wikidata}`}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="link text-primary/65 text-xs hover:text-primary"
+                                            className="link text-base-content/70 hover:text-base-content"
                                             onClick={(ev) =>
                                               ev.stopPropagation()
                                             }
