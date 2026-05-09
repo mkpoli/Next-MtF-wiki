@@ -460,17 +460,26 @@ export default function SearchableTerminologyTable({ data, lang }: Props) {
                                 {entry.wikidata && (
                                   <>
                                     <dt className="font-semibold text-base-content/60">
-                                      Wikipedia
+                                      Wikidata
                                     </dt>
-                                    <dd>
+                                    <dd className="flex items-center gap-2 flex-wrap">
                                       <a
-                                        href={`https://www.wikidata.org/wiki/Special:GoToLinkedPage/${({ 'zh-cn': 'zh', 'zh-hant': 'zh', ja: 'ja', en: 'en', es: 'es' } as Record<string, string>)[lang] ?? 'en'}wiki/${entry.wikidata}`}
+                                        href={`https://www.wikidata.org/wiki/${entry.wikidata}`}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="link link-primary text-xs font-mono"
                                         onClick={(ev) => ev.stopPropagation()}
                                       >
                                         {entry.wikidata}
+                                      </a>
+                                      <a
+                                        href={`https://www.wikidata.org/wiki/Special:GoToLinkedPage/${({ 'zh-cn': 'zh', 'zh-hant': 'zh', ja: 'ja', en: 'en', es: 'es' } as Record<string, string>)[lang] ?? 'en'}wiki/${entry.wikidata}`}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="link link-primary text-xs"
+                                        onClick={(ev) => ev.stopPropagation()}
+                                      >
+                                        Wikipedia ↗
                                       </a>
                                     </dd>
                                   </>
