@@ -408,14 +408,25 @@ export default function SearchableTerminologyTable({ data, lang }: Props) {
                             );
                           })}
                           <td className="text-right align-top whitespace-nowrap">
-                            {canExpand && (
-                              <span
-                                className={`inline-block transition-transform duration-150 text-base-content/40 ${isOpen ? 'rotate-90' : ''}`}
-                                aria-hidden="true"
-                              >
-                                ›
-                              </span>
-                            )}
+                            <span className="inline-flex items-center gap-1">
+                              {entry.wikidata && (
+                                <span
+                                  className="text-[10px] text-base-content/30 font-mono leading-none"
+                                  title={`Wikidata: ${entry.wikidata}`}
+                                  aria-hidden="true"
+                                >
+                                  W
+                                </span>
+                              )}
+                              {canExpand && (
+                                <span
+                                  className={`inline-block transition-transform duration-150 text-base-content/40 ${isOpen ? 'rotate-90' : ''}`}
+                                  aria-hidden="true"
+                                >
+                                  ›
+                                </span>
+                              )}
+                            </span>
                           </td>
                         </tr>
 
