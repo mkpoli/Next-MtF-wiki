@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useRef, useState } from 'react';
+import { Fragment, useMemo, useRef, useState } from 'react';
 import { t } from '@/lib/i18n/client';
 
 export interface TermEntry {
@@ -322,9 +322,9 @@ export default function SearchableTerminologyTable({ data, lang }: Props) {
               </tr>
             ) : (
               grouped.map(({ category, entries: catEntries }) => (
-                <>
+                <Fragment key={category}>
                   {/* Category header */}
-                  <tr key={`cat-${category}`} className="bg-base-200/80">
+                  <tr className="bg-base-200/80">
                     <td
                       colSpan={colCount}
                       className="py-1 px-3 text-xs font-semibold uppercase tracking-wide text-base-content/50 whitespace-nowrap"
@@ -339,9 +339,8 @@ export default function SearchableTerminologyTable({ data, lang }: Props) {
                     const canExpand = hasExpandContent(entry, lang);
 
                     return (
-                      <>
+                      <Fragment key={entry.id}>
                         <tr
-                          key={entry.id}
                           className={
                             canExpand
                               ? 'hover:bg-base-200/50 cursor-pointer'
@@ -532,10 +531,10 @@ export default function SearchableTerminologyTable({ data, lang }: Props) {
                             </td>
                           </tr>
                         )}
-                      </>
+                      </Fragment>
                     );
                   })}
-                </>
+                </Fragment>
               ))
             )}
           </tbody>
