@@ -491,7 +491,7 @@ export default function SearchableTerminologyTable({ data, lang }: Props) {
                                             href={`https://www.wikidata.org/wiki/${entry.wikidata}`}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="link link-primary text-xs font-mono"
+                                            className="link text-primary/65 text-xs font-mono hover:text-primary"
                                             onClick={(ev) =>
                                               ev.stopPropagation()
                                             }
@@ -503,7 +503,7 @@ export default function SearchableTerminologyTable({ data, lang }: Props) {
                                               href={`https://www.wikidata.org/wiki/Special:GoToLinkedPage/${wikiLang}wiki/${entry.wikidata}`}
                                               target="_blank"
                                               rel="noopener noreferrer"
-                                              className="link link-primary text-xs"
+                                              className="link text-primary/65 text-xs hover:text-primary"
                                               onClick={(ev) =>
                                                 ev.stopPropagation()
                                               }
@@ -515,7 +515,7 @@ export default function SearchableTerminologyTable({ data, lang }: Props) {
                                             href={`https://www.wikidata.org/wiki/Special:GoToLinkedPage/enwiki/${entry.wikidata}`}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="link link-primary text-xs"
+                                            className="link text-primary/65 text-xs hover:text-primary"
                                             onClick={(ev) =>
                                               ev.stopPropagation()
                                             }
