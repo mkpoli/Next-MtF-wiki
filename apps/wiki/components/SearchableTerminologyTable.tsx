@@ -206,7 +206,7 @@ export default function SearchableTerminologyTable({ data, lang }: Props) {
     const groups: { category: string; entries: TermEntry[] }[] = [];
     for (const entry of sorted) {
       const last = groups[groups.length - 1];
-      if (last?.category === entry.category) last.entries.push(entry);
+      if (last && last.category === entry.category) last.entries.push(entry);
       else groups.push({ category: entry.category, entries: [entry] });
     }
     return groups;
