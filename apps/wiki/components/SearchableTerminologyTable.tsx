@@ -33,8 +33,8 @@ const LANG_ORDER = ['zh-cn', 'zh-hant', 'ja', 'en', 'es'] as const;
 type LangCode = (typeof LANG_ORDER)[number];
 
 const LANG_LABELS: Record<LangCode, string> = {
-  'zh-cn': '中文（简）',
-  'zh-hant': '中文（繁）',
+  'zh-cn': '简体中文',
+  'zh-hant': '繁体中文',
   ja: '日本語',
   en: 'English',
   es: 'Español',
