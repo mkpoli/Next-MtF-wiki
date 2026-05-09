@@ -468,33 +468,66 @@ export default function SearchableTerminologyTable({ data, lang }: Props) {
                                     </dd>
                                   </>
                                 )}
-                                {entry.wikidata && (
-                                  <>
-                                    <dt className="font-semibold text-base-content/60">
-                                      Wikidata
-                                    </dt>
-                                    <dd className="flex items-center gap-2 flex-wrap">
-                                      <a
-                                        href={`https://www.wikidata.org/wiki/${entry.wikidata}`}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="link link-primary text-xs font-mono"
-                                        onClick={(ev) => ev.stopPropagation()}
-                                      >
-                                        {entry.wikidata}
-                                      </a>
-                                      <a
-                                        href={`https://www.wikidata.org/wiki/Special:GoToLinkedPage/${({ 'zh-cn': 'zh', 'zh-hant': 'zh', ja: 'ja', en: 'en', es: 'es' } as Record<string, string>)[lang] ?? 'en'}wiki/${entry.wikidata}`}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="link link-primary text-xs"
-                                        onClick={(ev) => ev.stopPropagation()}
-                                      >
-                                        Wikipedia ↗
-                                      </a>
-                                    </dd>
-                                  </>
-                                )}
+                                {entry.wikidata &&
+                                  (() => {
+                                    const wikiLang =
+                                      (
+                                        {
+                                          'zh-cn': 'zh',
+                                          'zh-hant': 'zh',
+                                          ja: 'ja',
+                                          en: 'en',
+                                          es: 'es',
+                                        } as Record<string, string>
+                                      )[lang] ?? 'en';
+                                    const isEnglish = wikiLang === 'en';
+                                    return (
+                                      <>
+                                        <dt className="font-semibold text-base-content/60">
+                                          Wikidata
+                                        </dt>
+                                        <dd className="flex items-center gap-2 flex-wrap">
+                                          <a
+                                            href={`https://www.wikidata.org/wiki/${entry.wikidata}`}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="link link-primary text-xs font-mono"
+                                            onClick={(ev) =>
+                                              ev.stopPropagation()
+                                            }
+                                          >
+                                            {entry.wikidata}
+                                          </a>
+                                          {!isEnglish && (
+                                            <a
+                                              href={`https://www.wikidata.org/wiki/Special:GoToLinkedPage/${wikiLang}wiki/${entry.wikidata}`}
+                                              target="_blank"
+                                              rel="noopener noreferrer"
+                                              className="link link-primary text-xs"
+                                              onClick={(ev) =>
+                                                ev.stopPropagation()
+                                              }
+                                            >
+                                              Wikipedia ↗
+                                            </a>
+                                          )}
+                                          <a
+                                            href={`https://www.wikidata.org/wiki/Special:GoToLinkedPage/enwiki/${entry.wikidata}`}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="link link-primary text-xs"
+                                            onClick={(ev) =>
+                                              ev.stopPropagation()
+                                            }
+                                          >
+                                            {isEnglish
+                                              ? 'Wikipedia ↗'
+                                              : 'Wikipedia (EN) ↗'}
+                                          </a>
+                                        </dd>
+                                      </>
+                                    );
+                                  })()}
                               </dl>
                             </td>
                           </tr>
