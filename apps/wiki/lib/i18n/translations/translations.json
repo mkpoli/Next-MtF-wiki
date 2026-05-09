@@ -215,5 +215,12 @@
     "ja": "備考",
     "es": "Notas",
     "en": "Notes"
+  },
+  "terminology-columns": {
+    "zh-cn": "列",
+    "zh-hant": "欄",
+    "ja": "列",
+    "es": "Columnas",
+    "en": "Columns"
   }
 }
