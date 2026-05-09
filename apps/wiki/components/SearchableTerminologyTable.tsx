@@ -14,7 +14,11 @@ export interface TermEntry {
   en: string;
   es: string;
   source: string;
-  aliases: string;
+  'aliases-zh-cn': string;
+  'aliases-zh-hant': string;
+  'aliases-ja': string;
+  'aliases-en': string;
+  'aliases-es': string;
   avoid: string;
   disputed: string;
   notes: string;
@@ -191,7 +195,11 @@ export default function SearchableTerminologyTable({ data, lang }: Props) {
         e.en,
         e.es,
         e.abbr,
-        e.aliases,
+        e['aliases-zh-cn'],
+        e['aliases-zh-hant'],
+        e['aliases-ja'],
+        e['aliases-en'],
+        e['aliases-es'],
         e.notes,
       ].some((v) => v?.toLowerCase().includes(q)),
     );
@@ -295,10 +303,7 @@ export default function SearchableTerminologyTable({ data, lang }: Props) {
           <thead>
             <tr className="bg-base-200">
               {langOrder.map((l) => (
-                <th
-                  key={l}
-                  className={`whitespace-nowrap ${l === (lang as LangCode) ? 'font-bold text-primary' : ''}`}
-                >
+                <th key={l} className="whitespace-nowrap">
                   {LANG_LABELS[l]}
                 </th>
               ))}
@@ -332,12 +337,6 @@ export default function SearchableTerminologyTable({ data, lang }: Props) {
                   {catEntries.map((entry) => {
                     const isOpen = expanded.has(entry.id);
                     const canExpand = hasExpandContent(entry, lang);
-                    const aliasList = entry.aliases
-                      ? entry.aliases
-                          .split('/')
-                          .map((a) => a.trim())
-                          .filter(Boolean)
-                      : [];
 
                     return (
                       <>
@@ -382,19 +381,29 @@ export default function SearchableTerminologyTable({ data, lang }: Props) {
                                   </span>
                                 )}
 
-                                {/* Aliases — zh-cn column only, as chips */}
-                                {l === 'zh-cn' && aliasList.length > 0 && (
-                                  <div className="mt-1 flex flex-wrap gap-0.5">
-                                    {aliasList.map((alias) => (
-                                      <span
-                                        key={alias}
-                                        className="badge badge-xs badge-ghost text-[10px] text-base-content/40"
-                                      >
-                                        {highlight(alias, query)}
-                                      </span>
-                                    ))}
-                                  </div>
-                                )}
+                                {/* Aliases — per language, as small chips */}
+                                {(() => {
+                                  const key = `aliases-${l}` as keyof TermEntry;
+                                  const raw = entry[key] as string;
+                                  const list = raw
+                                    ? raw
+                                        .split('/')
+                                        .map((a) => a.trim())
+                                        .filter(Boolean)
+                                    : [];
+                                  return list.length > 0 ? (
+                                    <div className="mt-1 flex flex-wrap gap-0.5">
+                                      {list.map((alias) => (
+                                        <span
+                                          key={alias}
+                                          className="badge badge-xs badge-ghost text-[10px] text-base-content/40"
+                                        >
+                                          {highlight(alias, query)}
+                                        </span>
+                                      ))}
+                                    </div>
+                                  ) : null;
+                                })()}
                               </td>
                             );
                           })}
@@ -451,11 +460,11 @@ export default function SearchableTerminologyTable({ data, lang }: Props) {
                                 {entry.wikidata && (
                                   <>
                                     <dt className="font-semibold text-base-content/60">
-                                      Wikidata
+                                      Wikipedia
                                     </dt>
                                     <dd>
                                       <a
-                                        href={`https://www.wikidata.org/wiki/${entry.wikidata}`}
+                                        href={`https://www.wikidata.org/wiki/Special:GoToLinkedPage/${({ 'zh-cn': 'zh', 'zh-hant': 'zh', ja: 'ja', en: 'en', es: 'es' } as Record<string, string>)[lang] ?? 'en'}wiki/${entry.wikidata}`}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="link link-primary text-xs font-mono"
