@@ -137,6 +137,11 @@ export const siteConfig: SiteConfig = {
       noMarkdown: getGlobalNoMarkdown(),
     },
     {
+      code: 'ko',
+      subfolders: ['docs', 'about'],
+      noMarkdown: getGlobalNoMarkdown(),
+    },
+    {
       code: 'en',
       subfolders: ['docs', 'about'],
       noMarkdown: getGlobalNoMarkdown(),

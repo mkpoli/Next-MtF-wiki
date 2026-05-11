@@ -11,12 +11,14 @@ export interface TermEntry {
   'zh-cn': string;
   'zh-hant': string;
   ja: string;
+  ko: string;
   en: string;
   es: string;
   source: string;
   'aliases-zh-cn': string;
   'aliases-zh-hant': string;
   'aliases-ja': string;
+  'aliases-ko': string;
   'aliases-en': string;
   'aliases-es': string;
   avoid: string;
@@ -29,13 +31,14 @@ interface Props {
   lang: string;
 }
 
-const LANG_ORDER = ['zh-cn', 'zh-hant', 'ja', 'en', 'es'] as const;
+const LANG_ORDER = ['zh-cn', 'zh-hant', 'ja', 'ko', 'en', 'es'] as const;
 type LangCode = (typeof LANG_ORDER)[number];
 
 const LANG_LABELS: Record<LangCode, string> = {
   'zh-cn': '简体中文',
   'zh-hant': '繁体中文',
   ja: '日本語',
+  ko: '한국어',
   en: 'English',
   es: 'Español',
 };
@@ -58,6 +61,7 @@ const CATEGORY_LABELS: Record<string, Record<string, string>> = {
     'zh-cn': '身份认同',
     'zh-hant': '身份認同',
     ja: 'アイデンティティ',
+    ko: '정체성',
     en: 'Identity',
     es: 'Identidad',
   },
@@ -65,6 +69,7 @@ const CATEGORY_LABELS: Record<string, Record<string, string>> = {
     'zh-cn': '激素治疗',
     'zh-hant': '激素治療',
     ja: 'ホルモン療法',
+    ko: '호르몬 치료',
     en: 'Hormone Therapy',
     es: 'Terapia Hormonal',
   },
@@ -72,6 +77,7 @@ const CATEGORY_LABELS: Record<string, Record<string, string>> = {
     'zh-cn': '手术',
     'zh-hant': '手術',
     ja: '手術',
+    ko: '수술',
     en: 'Surgery',
     es: 'Cirugía',
   },
@@ -79,6 +85,7 @@ const CATEGORY_LABELS: Record<string, Record<string, string>> = {
     'zh-cn': '嗓音',
     'zh-hant': '嗓音',
     ja: '音声',
+    ko: '음성',
     en: 'Voice',
     es: 'Voz',
   },
@@ -86,6 +93,7 @@ const CATEGORY_LABELS: Record<string, Record<string, string>> = {
     'zh-cn': '脱毛',
     'zh-hant': '脫毛',
     ja: '脱毛',
+    ko: '제모',
     en: 'Hair Removal',
     es: 'Depilación',
   },
@@ -93,6 +101,7 @@ const CATEGORY_LABELS: Record<string, Record<string, string>> = {
     'zh-cn': '医疗体系',
     'zh-hant': '醫療體系',
     ja: '医療体制',
+    ko: '의료 체계',
     en: 'Medical',
     es: 'Sistema Médico',
   },
@@ -100,6 +109,7 @@ const CATEGORY_LABELS: Record<string, Record<string, string>> = {
     'zh-cn': '法律与证件',
     'zh-hant': '法律與證件',
     ja: '法律・証明書',
+    ko: '법률·신분증',
     en: 'Legal',
     es: 'Legal',
   },
@@ -107,6 +117,7 @@ const CATEGORY_LABELS: Record<string, Record<string, string>> = {
     'zh-cn': '社群与社会',
     'zh-hant': '社群與社會',
     ja: '社会',
+    ko: '사회',
     en: 'Social',
     es: 'Social',
   },
@@ -114,6 +125,7 @@ const CATEGORY_LABELS: Record<string, Record<string, string>> = {
     'zh-cn': '检验指标',
     'zh-hant': '檢驗指標',
     ja: '検査値',
+    ko: '검사 수치',
     en: 'Lab Values',
     es: 'Valores Lab',
   },
@@ -121,6 +133,7 @@ const CATEGORY_LABELS: Record<string, Record<string, string>> = {
     'zh-cn': '其他',
     'zh-hant': '其他',
     ja: 'その他',
+    ko: '기타',
     en: 'Other',
     es: 'Otros',
   },
@@ -192,12 +205,14 @@ export default function SearchableTerminologyTable({ data, lang }: Props) {
         e['zh-cn'],
         e['zh-hant'],
         e.ja,
+        e.ko,
         e.en,
         e.es,
         e.abbr,
         e['aliases-zh-cn'],
         e['aliases-zh-hant'],
         e['aliases-ja'],
+        e['aliases-ko'],
         e['aliases-en'],
         e['aliases-es'],
         e.notes,
@@ -475,6 +490,7 @@ export default function SearchableTerminologyTable({ data, lang }: Props) {
                                           'zh-cn': 'zh',
                                           'zh-hant': 'zh',
                                           ja: 'ja',
+                                          ko: 'ko',
                                           en: 'en',
                                           es: 'es',
                                         } as Record<string, string>

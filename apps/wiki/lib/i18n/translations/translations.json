@@ -3,6 +3,7 @@
     "zh-cn": "文档",
     "zh-hant": "文檔",
     "ja": "ドキュメント",
+    "ko": "문서",
     "es": "Documentos",
     "en": "Documents"
   },
@@ -10,6 +11,7 @@
     "zh-cn": "关于",
     "zh-hant": "關於",
     "ja": "について",
+    "ko": "소개",
     "es": "Acerca de",
     "en": "About"
   },
@@ -17,6 +19,7 @@
     "zh-cn": "激素换算",
     "zh-hant": "荷爾蒙換算",
     "ja": "ホルモン換算",
+    "ko": "호르몬 환산",
     "es": "Conversión de hormonas",
     "en": "Hormone Converter"
   },
@@ -24,6 +27,7 @@
     "zh-cn": "胸围计算",
     "zh-hant": "胸圍計算",
     "ja": "ブラジャーサイズ計算",
+    "ko": "브래지어 사이즈 계산",
     "es": "Calculadora de talla de sujetador",
     "en": "Cup Calculator"
   },
@@ -31,6 +35,7 @@
     "zh-cn": "目录",
     "zh-hant": "目錄",
     "ja": "目次",
+    "ko": "목차",
     "es": "Índice",
     "en": "Table of Contents"
   },
@@ -38,6 +43,7 @@
     "zh-cn": "显示目录",
     "zh-hant": "顯示目錄",
     "ja": "目次を表示",
+    "ko": "목차 보기",
     "es": "Mostrar índice",
     "en": "Show Table of Contents"
   },
@@ -45,6 +51,7 @@
     "zh-cn": "此页面暂无目录",
     "zh-hant": "此頁面暫無目錄",
     "ja": "このページには目次がありません",
+    "ko": "이 페이지에는 목차가 없습니다",
     "es": "Esta página no tiene índice",
     "en": "No table of contents for this page"
   },
@@ -52,6 +59,7 @@
     "zh-cn": "注释",
     "zh-hant": "注釋",
     "ja": "注釈",
+    "ko": "각주",
     "es": "Nota",
     "en": "Footnote"
   },
@@ -59,6 +67,7 @@
     "zh-cn": "导航",
     "zh-hant": "導航",
     "ja": "ナビゲーション",
+    "ko": "내비게이션",
     "es": "Navegación",
     "en": "Navigation"
   },
@@ -66,6 +75,7 @@
     "zh-cn": "上一页",
     "zh-hant": "上一頁",
     "ja": "前のページ",
+    "ko": "이전 페이지",
     "es": "Página anterior",
     "en": "Previous Page"
   },
@@ -73,6 +83,7 @@
     "zh-cn": "下一页",
     "zh-hant": "下一頁",
     "ja": "次のページ",
+    "ko": "다음 페이지",
     "es": "Página siguiente",
     "en": "Next Page"
   },
@@ -80,6 +91,7 @@
     "zh-cn": "子页面",
     "zh-hant": "子頁面",
     "ja": "子ページ",
+    "ko": "하위 페이지",
     "es": "Páginas secundarias",
     "en": "Child Pages"
   },
@@ -87,6 +99,7 @@
     "zh-cn": "MtF.wiki",
     "zh-hant": "MtF.wiki",
     "ja": "MtF.wiki",
+    "ko": "MtF.wiki",
     "es": "MtF.wiki",
     "en": "MtF.wiki"
   },
@@ -94,6 +107,7 @@
     "zh-cn": "主题设置",
     "zh-hant": "主題設置",
     "ja": "テーマ設定",
+    "ko": "테마 설정",
     "es": "Configuración de tema",
     "en": "Theme Settings"
   },
@@ -101,6 +115,7 @@
     "zh-cn": "跟随系统",
     "zh-hant": "跟隨系統",
     "ja": "システムに従う",
+    "ko": "시스템 설정 따르기",
     "es": "Seguir sistema",
     "en": "Follow System"
   },
@@ -108,6 +123,7 @@
     "zh-cn": "自动",
     "zh-hant": "自動",
     "ja": "自動",
+    "ko": "자동",
     "es": "Automático",
     "en": "Automatic"
   },
@@ -115,6 +131,7 @@
     "zh-cn": "浅色主题",
     "zh-hant": "淺色主題",
     "ja": "ライトテーマ",
+    "ko": "라이트 테마",
     "es": "Tema claro",
     "en": "Light Theme"
   },
@@ -122,6 +139,7 @@
     "zh-cn": "使用浅色主题",
     "zh-hant": "使用淺色主題",
     "ja": "ライトテーマを使用",
+    "ko": "라이트 테마 사용",
     "es": "Usar tema claro",
     "en": "Use light theme"
   },
@@ -129,6 +147,7 @@
     "zh-cn": "深色主题",
     "zh-hant": "深色主題",
     "ja": "ダークテーマ",
+    "ko": "다크 테마",
     "es": "Tema oscuro",
     "en": "Dark Theme"
   },
@@ -136,6 +155,7 @@
     "zh-cn": "使用深色主题",
     "zh-hant": "使用深色主題",
     "ja": "ダークテーマを使用",
+    "ko": "다크 테마 사용",
     "es": "Usar tema oscuro",
     "en": "Use dark theme"
   },
@@ -143,6 +163,7 @@
     "zh-cn": "当前主题",
     "zh-hant": "當前主題",
     "ja": "現在のテーマ",
+    "ko": "현재 테마",
     "es": "Tema actual",
     "en": "Current Theme"
   },
@@ -150,6 +171,7 @@
     "zh-cn": "字体设置",
     "zh-hant": "字體設置",
     "ja": "フォント設定",
+    "ko": "글꼴 설정",
     "es": "Configuración de fuente",
     "en": "Font Settings"
   },
@@ -157,6 +179,7 @@
     "zh-cn": "当前字体",
     "zh-hant": "當前字體",
     "ja": "現在のフォント",
+    "ko": "현재 글꼴",
     "es": "Fuente actual",
     "en": "Current Font"
   },
@@ -164,6 +187,7 @@
     "zh-cn": "搜索术语…",
     "zh-hant": "搜尋術語…",
     "ja": "用語を検索…",
+    "ko": "용어 검색…",
     "es": "Buscar término…",
     "en": "Search terms…"
   },
@@ -171,6 +195,7 @@
     "zh-cn": "显示 {shown} / {total} 条",
     "zh-hant": "顯示 {shown} / {total} 條",
     "ja": "{shown} / {total} 件表示",
+    "ko": "{shown} / {total} 항목 표시",
     "es": "Mostrando {shown} de {total}",
     "en": "Showing {shown} of {total}"
   },
@@ -178,6 +203,7 @@
     "zh-cn": "无匹配结果",
     "zh-hant": "無匹配結果",
     "ja": "結果なし",
+    "ko": "일치하는 결과 없음",
     "es": "Sin resultados",
     "en": "No results found"
   },
@@ -185,6 +211,7 @@
     "zh-cn": "源术语",
     "zh-hant": "源術語",
     "ja": "原語",
+    "ko": "원어",
     "es": "Término fuente",
     "en": "Source term"
   },
@@ -192,6 +219,7 @@
     "zh-cn": "异名",
     "zh-hant": "異名",
     "ja": "異名",
+    "ko": "이명",
     "es": "Sinónimos",
     "en": "Aliases"
   },
@@ -199,6 +227,7 @@
     "zh-cn": "避免使用",
     "zh-hant": "避免使用",
     "ja": "使用を避ける",
+    "ko": "사용 지양",
     "es": "Evitar",
     "en": "Avoid"
   },
@@ -206,6 +235,7 @@
     "zh-cn": "存在争议",
     "zh-hant": "存在爭議",
     "ja": "議論あり",
+    "ko": "논쟁 있음",
     "es": "Disputado",
     "en": "Disputed"
   },
@@ -213,6 +243,7 @@
     "zh-cn": "备注",
     "zh-hant": "備註",
     "ja": "備考",
+    "ko": "비고",
     "es": "Notas",
     "en": "Notes"
   },
@@ -220,6 +251,7 @@
     "zh-cn": "列",
     "zh-hant": "欄",
     "ja": "列",
+    "ko": "열",
     "es": "Columnas",
     "en": "Columns"
   }

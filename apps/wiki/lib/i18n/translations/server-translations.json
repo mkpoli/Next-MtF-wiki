@@ -3,6 +3,7 @@
     "zh-cn": "搜索文档...",
     "zh-hant": "搜索文档...",
     "ja": "ドキュメントを検索...",
+    "ko": "문서 검색...",
     "es": "Buscar documentos...",
     "en": "Search documents..."
   },
@@ -10,6 +11,7 @@
     "zh-cn": "未找到相关文档",
     "zh-hant": "未找到相關文檔",
     "ja": "関連するドキュメントが見つかりません",
+    "ko": "관련 문서를 찾을 수 없습니다",
     "es": "No se encontraron documentos relacionados",
     "en": "No related documents found"
   },
@@ -17,6 +19,7 @@
     "zh-cn": "尝试使用不同的关键词",
     "zh-hant": "嘗試使用不同的關鍵詞",
     "ja": "異なるキーワードを試してください",
+    "ko": "다른 키워드를 시도해 보세요",
     "es": "Intenta con diferentes palabras clave",
     "en": "Try different keywords"
   },
@@ -24,6 +27,7 @@
     "zh-cn": "MtF.wiki 的内容仅供参考，可能存在过时或不准确的信息，请谨慎甄别。",
     "zh-hant": "MtF.wiki 的內容僅供參考，可能存在過時或不準確的信息，請謹慎甄別。",
     "ja": "MtF.wiki の内容は参考になりますが、過去の情報や不正確な情報が含まれている可能性があります。ご注意ください。",
+    "ko": "MtF.wiki의 내용은 참고용이며, 오래되었거나 부정확한 정보가 포함되어 있을 수 있습니다. 신중하게 판단해 주세요.",
     "es": "El contenido de MtF.wiki es solo para referencia y puede contener información obsoleta o incorrecta. Por favor, ten cuidado.",
     "en": "The content of MtF.wiki is for reference only and may contain outdated or inaccurate information. Please be cautious."
   },
@@ -31,6 +35,7 @@
     "zh-cn": "MtF.wiki 的内容仅供参考，可能存在过时或不准确的信息，请谨慎甄别。（您当前访问的是技术测试版本站点，仅供技术测试相关需求使用）",
     "zh-hant": "MtF.wiki 的內容僅供參考，可能存在過時或不準確的信息，請謹慎甄別。（您當前訪問的是技術測試版本站點，僅供技術測試相關需求使用）",
     "ja": "MtF.wiki の内容は参考になりますが、過去の情報や不正確な情報が含まれている可能性があります。ご注意ください。（あなたは現在技術テストバージョンのサイトにアクセスしています。技術テストのみに使用してください。）",
+    "ko": "MtF.wiki의 내용은 참고용이며, 오래되었거나 부정확한 정보가 포함되어 있을 수 있습니다. 신중하게 판단해 주세요. (현재 기술 테스트 버전 사이트에 접속하셨으며, 기술 테스트 용도로만 사용해 주세요.)",
     "es": "El contenido de MtF.wiki es solo para referencia y puede contener información obsoleta o incorrecta. Por favor, ten cuidado. (Actualmente estás visitando un sitio web de versión de prueba técnica. Solo para uso técnico.)",
     "en": "The content of MtF.wiki is for reference only and may contain outdated or inaccurate information. Please be cautious. (You are currently visiting a technical test version site. Only for technical test.)"
   },
@@ -38,6 +43,7 @@
     "zh-cn": "免责声明",
     "zh-hant": "免責聲明",
     "ja": "免責聲明",
+    "ko": "면책 조항",
     "es": "Aviso de免责",
     "en": "Disclaimer"
   },
@@ -45,6 +51,7 @@
     "zh-cn": "/zh-cn/about/disclaimer",
     "zh-hant": "/en/about/disclaimer",
     "ja": "/en/about/disclaimer",
+    "ko": "/ko/about/disclaimer",
     "es": "/en/about/disclaimer",
     "en": "/en/about/disclaimer"
   },
@@ -52,6 +59,7 @@
     "zh-cn": "关闭",
     "zh-hant": "關閉",
     "ja": "閉じる",
+    "ko": "닫기",
     "es": "Cerrar",
     "en": "Close"
   },
@@ -59,6 +67,7 @@
     "zh-cn": "最近更新于",
     "zh-hant": "最近更新於",
     "ja": "最近更新於",
+    "ko": "최근 업데이트: ",
     "es": "Última modificación ",
     "en": "Last Modified "
   },
@@ -66,6 +75,7 @@
     "zh-cn": "在 GitHub 上编辑",
     "zh-hant": "在 GitHub 上編輯",
     "ja": "GitHub で編集する",
+    "ko": "GitHub에서 편집",
     "es": "Editar en GitHub",
     "en": "Edit on GitHub"
   },
@@ -73,6 +83,7 @@
     "zh-cn": "MtF.wiki",
     "zh-hant": "MtF.wiki",
     "ja": "MtF.wiki",
+    "ko": "MtF.wiki",
     "es": "MtF.wiki",
     "en": "MtF.wiki"
   },
@@ -80,6 +91,7 @@
     "zh-cn": "欢迎来到 MtF.wiki．我们试图整理汇总女性倾向跨性别的相关资料，为大家提供更好的帮助~",
     "zh-hant": "歡迎來到 MtF.wiki．我們試圖整理匯總女性傾向跨性別的相關資料，為大家提供更好的幫助~",
     "ja": "MtF.wiki へようこそ。 吾輩は、女性的なトランスジェンダーに関する情報を整理して要約し、より良い支援を提供するよう努めています〜",
+    "ko": "MtF.wiki에 오신 것을 환영합니다. 트랜스여성 관련 정보를 정리·요약하여 여러분께 더 나은 도움을 드리고자 합니다~",
     "es": "Bienvenida a MtF.wiki. Tratamos de organizar la información relevante de transfeminidad para daros mejor ayuda ^_^",
     "en": "Welcome to the MtF.wiki. We are trying to organize the relevant information of transfeminine to provide you with better help ^_^"
   },
@@ -87,6 +99,7 @@
     "zh-cn": "查看文档",
     "zh-hant": "查看文檔",
     "ja": "ドキュメントを見る",
+    "ko": "문서 보기",
     "es": "Ver documentos",
     "en": "View documents"
   },
@@ -94,6 +107,7 @@
     "zh-cn": "项目",
     "zh-hant": "項目",
     "ja": "プロジェクト",
+    "ko": "프로젝트",
     "es": "Proyecto",
     "en": "Project"
   },
@@ -101,6 +115,7 @@
     "zh-cn": "我们的存在，就是对恶意最大的反抗。",
     "zh-hant": "我們的存在，就是對惡意最大的反抗。",
     "ja": "私たちの存在は、悪意への最大の反抗である。",
+    "ko": "우리의 존재 자체가 악의에 대한 가장 큰 저항이다.",
     "es": "Nuestra existencia es resistencia.",
     "en": "Our existence is resistance."
   },
@@ -108,6 +123,7 @@
     "zh-cn": "文档内容源码",
     "zh-hant": "文檔內容源碼",
     "ja": "ドキュメントコンテンツソースコード",
+    "ko": "문서 콘텐츠 소스 코드",
     "es": "Código fuente del contenido del documento",
     "en": "Document Content Source Code"
   },
@@ -115,6 +131,7 @@
     "zh-cn": "网站框架源码",
     "zh-hant": "網站框架源碼",
     "ja": "ウェブサイトフレームワークソースコード",
+    "ko": "웹사이트 프레임워크 소스 코드",
     "es": "Código fuente del sitio web",
     "en": "Website Framework Source Code"
   },
@@ -122,6 +139,7 @@
     "zh-cn": "导航站 2345.LGBT",
     "zh-hant": "導航站 2345.LGBT",
     "ja": "ナビゲーションサイト 2345.LGBT",
+    "ko": "내비게이션 사이트 2345.LGBT",
     "es": "Sitio de navegación 2345.LGBT",
     "en": "Navigation Site 2345.LGBT"
   },
@@ -129,6 +147,7 @@
     "zh-cn": "动态",
     "zh-hant": "動態",
     "ja": "更新情報",
+    "ko": "소식",
     "es": "Actualizaciones",
     "en": "Updates"
   },
@@ -136,6 +155,7 @@
     "zh-cn": "Twitter",
     "zh-hant": "Twitter",
     "ja": "Twitter",
+    "ko": "Twitter",
     "es": "Twitter",
     "en": "Twitter"
   },
@@ -143,6 +163,7 @@
     "zh-cn": "Telegram 频道",
     "zh-hant": "Telegram 頻道",
     "ja": "Telegram チャンネル",
+    "ko": "Telegram 채널",
     "es": "Canal de Telegram",
     "en": "Telegram Channel"
   },
@@ -150,6 +171,7 @@
     "zh-cn": "联系",
     "zh-hant": "聯繫",
     "ja": "お問い合わせ",
+    "ko": "연락처",
     "es": "Contacto",
     "en": "Contact"
   },
@@ -157,6 +179,7 @@
     "zh-cn": "贡献者指南",
     "zh-hant": "貢獻者指南",
     "ja": "コントリビューターガイド",
+    "ko": "기여자 가이드",
     "es": "Guía del contribuyente",
     "en": "Contributor Guide"
   },
@@ -164,6 +187,7 @@
     "zh-cn": "GitHub",
     "zh-hant": "GitHub",
     "ja": "GitHub",
+    "ko": "GitHub",
     "es": "GitHub",
     "en": "GitHub"
   },
@@ -171,6 +195,7 @@
     "zh-cn": "电子邮件",
     "zh-hant": "電子郵件",
     "ja": "メール",
+    "ko": "이메일",
     "es": "Correo electrónico",
     "en": "Email"
   },
@@ -178,6 +203,7 @@
     "zh-cn": "All rights reserved. Maintained by",
     "zh-hant": "All rights reserved. Maintained by",
     "ja": "All rights reserved. Maintained by",
+    "ko": "All rights reserved. Maintained by",
     "es": "Todos los derechos reservados. Mantenido por",
     "en": "All rights reserved. Maintained by"
   },
@@ -185,6 +211,7 @@
     "zh-cn": "图片加载失败",
     "zh-hant": "圖片加載失敗",
     "ja": "画像の読み込みに失敗しました",
+    "ko": "이미지를 불러올 수 없습니다",
     "es": "Error al cargar la imagen",
     "en": "Image loading failed"
   },
@@ -192,6 +219,7 @@
     "zh-cn": "图片加载中...",
     "zh-hant": "圖片加載中...",
     "ja": "画像の読み込み中...",
+    "ko": "이미지 불러오는 중...",
     "es": "Cargando imagen...",
     "en": "Loading image..."
   },
@@ -199,6 +227,7 @@
     "zh-cn": "显示图片",
     "zh-hant": "顯示圖片",
     "ja": "画像を表示",
+    "ko": "이미지 표시",
     "es": "Mostrar imagen",
     "en": "Show image"
   },
@@ -206,6 +235,7 @@
     "zh-cn": "隐藏图片",
     "zh-hant": "隱藏圖片",
     "ja": "画像を非表示",
+    "ko": "이미지 숨기기",
     "es": "Ocultar imagen",
     "en": "Hide image"
   },
@@ -213,6 +243,7 @@
     "zh-cn": "点击显示图片",
     "zh-hant": "點擊顯示圖片",
     "ja": "画像を表示",
+    "ko": "클릭하여 이미지 표시",
     "es": "Mostrar imagen",
     "en": "Show image"
   },
@@ -220,6 +251,7 @@
     "zh-cn": "板块",
     "zh-hant": "板塊",
     "ja": "板塊",
+    "ko": "섹션",
     "es": "División",
     "en": "Division"
   },
@@ -227,6 +259,7 @@
     "zh-cn": "如果您的浏览器没有自动跳转，请点击此处",
     "zh-hant": "如果您的瀏覽器沒有自動跳轉，請點擊此處",
     "ja": "ブラウザーが自動的にリダイレクトされない場合は、ここをクリックしてください",
+    "ko": "브라우저가 자동으로 이동하지 않으면 여기를 클릭하세요",
     "es": "Si el navegador no redirige automáticamente, haga clic aquí",
     "en": "If the browser does not redirect automatically, click here"
   }

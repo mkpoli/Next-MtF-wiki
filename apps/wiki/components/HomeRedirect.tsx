@@ -61,6 +61,14 @@ export default function HomeRedirect({
             }
           }
 
+          // 韩语：将 ko-KR、kor 等映射到 'ko'
+          if (normalizedLang.startsWith('ko')) {
+            if (languageConfigs.some((config) => config.code === 'ko')) {
+              targetLanguage = 'ko';
+              break;
+            }
+          }
+
           // 处理主要语言代码（取前两位）
           const mainLang = normalizedLang.split('-')[0];
           if (languageConfigs.some((config) => config.code === mainLang)) {
@@ -161,7 +169,7 @@ export default function HomeRedirect({
         </footer>
       </div>
       <script
-        // biome-ignore lint/security/noDangerouslySetInnerHtml:
+        // biome-ignore lint/security/noDangerouslySetInnerHtml: inline noscript-style timeout fallback; no user-controlled content.
         dangerouslySetInnerHTML={{
           __html: `
             window.HomeRedirectWikiRedirectTimeout = window.HomeRedirectWikiRedirectTimeout || window.setTimeout(() => {
